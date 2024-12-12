@@ -1,47 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Nós</title>
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../javascript/script.js"></script>
 </head>
-<header>
-    <h1>Sobre nós</h1>
-    <img class="logo" src="../img/mamonas-ye.jpeg" alt="">
-    <h3 class="mamonasye">MAMONAS-YE</h3>
-    <nav>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="referencia.html">Referências</a></li>
-        </ul>
-    </nav>
-    </header>
+
 <body>
+    <nav class="sidebar">
+        <div class="menu-toggle" id="menuToggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul>
+            <img class="logo" src="../img/mamonas-ye.jpeg" alt="Logo">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#" id="sobrenos">Sobre Nós</a></li>
+            <li><a href="../src/referencia.html" id="referencias">Referências</a></li>
+        </ul>
+        <button id="translateButton" class="btn-translate">English</button>
+    </nav>
     <main>
-    <section>
-        <div class="topico">
-            <div class="textos">
-                <h1>Sobre nós </h1>
-                <p>Este é um site sobre Educação Ambiental, criado pela equipe MAMONAS-YE, onde trabalhamos em alguns tópicos importantes para a conscientização sobre esse assunto importante para o nosso futuro, e para o futuro de nossos filhos. </p>
+        <section>
+            <div class="topico">
+                <div class="textos">
+                    <h1 id="titsobrenos">Sobre nós </h1>
+                    <p id="txtsobrenos">Este é um site sobre Educação Ambiental, criado pela equipe MAMONAS-YE, onde
+                        trabalhamos em alguns tópicos importantes para conscientizar sobre esse assunto importante para
+                        o nosso futuro e para o futuro das nossas crianças.</p>
+                </div>
+                <div class="image">
+                    <img src="../img/mamonas-ye.jpeg" alt="Imagem Educação Ambiental">
+                </div>
             </div>
-            <div class="image">
-                <img src="../img/mamonas-ye.jpeg" alt="Imagem Educação Ambiental">
+        </section>
+        <section>
+            <div class="topico">
+                <div class="textos">
+                    <h1 id="titcriadores">Criadores </h1>
+                    <p id="txtcriadores">Estes somos nós, Leonardo Souza e Cauã Gomack, respectivamente, a atual equipe
+                        dos MAMONAS-YE e também os fundadores. </p>
+                </div>
+                <div class="image">
+                    <img src="../img/leocaua.jpg" alt="" srcset="">
+                </div>
             </div>
-        </div>
-    </section>
-    <section>
-        <div class="topico">
-            <div class="textos">
-                <h1>Criadores </h1>
-                <p>Este somos nós, Cauã Gomack e Leonardo Souza. </p>
+        </section>
+        <section>
+            <div class="topico">
+                <div class="textos">
+                    <h1 id="contato">Contato </h1>
+                    <p id="txtcontato">Para ter contato com nós, mande um e-mail: mamonasye@gmail.com
+                        ou mande mensagem para os números de telefones: (45)99954-8580 ou (45)99102-4765</p>
+                </div>
             </div>
-            <div class="image">
-                <img class="fotocaualeo" src="../img/caua.jpg" alt="Imagem Cauã">
-                <img class="fotocaualeo" src="../img/leo.jpg" alt="Imagem Leonardo">
-            </div>
-        </div>
-    </section>
-</main>
+        </section>
+    </main>
 </body>
+<footer>
+    <div class="footer-container">
+        <div class="footer-social">
+            <h3 id="redessociais">Redes Sociais</h3>
+            <ul>
+                <li><a href="https://facebook.com" target="_blank"><img src="../img/iconfacebook.png"
+                            alt="Facebook"></a></li>
+                <li><a href="https://www.instagram.com/mamonasye/profilecard/?igsh=MWQyNG80cWh0NWtjag=="
+                        target="_blank"><img src="../img/iconinstagram.png" alt="Instagram"></a></li>
+                <li><a href="https://x.com" target="_blank"><img src="../img/iconx.png" alt="Twitter"></a></li>
+                <li><a href="https://www.tiktok.com/@mamonasye?_t=8rwQLfJ7mgq&_r=1" target="_blank"><img
+                            src="../img/icontiktok.png" alt="TikTok"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p id="fotterdireitos">© 2024 MAMONAS-YE. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
 </html>

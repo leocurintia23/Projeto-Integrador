@@ -9,6 +9,57 @@ $secondary-color: #f4f4f4;
     text-align: center;
 }
 
+#inicio {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.header-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.header-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    font-family: "Anton", sans-serif;
+}
+
+#txtinicio {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.btn-inicio {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #2e8b57;
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-inicio:hover {
+    background-color: #1c6a43;
+    transform: scale(1.05);
+}
+
 body {
     font-family: Arial, sans-serif;
     background: linear-gradient(180deg, #026a46, #000000);
@@ -24,21 +75,25 @@ body {
     height: 100%;
     overflow-y: auto;
     transition: left 0.3s ease;
+
     ul {
         list-style: none;
         padding: 0;
         margin: 0;
+
         .logo {
             width: 100%;
             height: auto;
             display: block;
         }
+
         li {
             a {
                 display: block;
                 padding: 15px 20px;
                 color: white;
                 text-decoration: none;
+
                 &:hover {
                     background-color: darken($primary-color, 10%);
                 }
@@ -46,13 +101,31 @@ body {
         }
     }
 }
+.btn-translate {
+    margin: 20px auto;
+    display: block;
+    padding: 10px 20px;
+    background-color: #2e8b57;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 
+    &:hover {
+        background-color: #1c6a43;
+        transform: scale(1.05);
+    }
+}
 .menu-toggle {
     position: fixed;
     top: 15px;
     left: 15px;
     cursor: pointer;
     z-index: 1000;
+
     .bar {
         display: block;
         width: 50px;
@@ -86,7 +159,7 @@ main {
 .topico {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
+    grid-template-areas:
         "textos image"
         "textos video";
     gap: 50px;
@@ -130,8 +203,8 @@ main {
         align-items: center;
 
         iframe {
-            width: 472px; /* Largura fixa */
-            height: 447px; /* Altura fixa */
+            width: 472px;
+            height: 447px;
             border-radius: 10px;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
@@ -206,8 +279,6 @@ footer {
     }
 }
 
-
-
-.logo{
+.logo {
     width: 40px;
 }
